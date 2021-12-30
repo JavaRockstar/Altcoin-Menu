@@ -62,12 +62,12 @@ do
                 clear
                 read -p "Enter your ERG Wallet Address: "
                 echo "$REPLY"
-                sed -i "s/0x008c26f3a2Ca8bdC11e5891e0278c9436B6F5d1E/$REPLY/g" start_miner.sh
+                sed -i "s/9ecVhFXG3dnPX1coLxJEZqe62W7weHanavi9axnaNmtBNFZkAiQ/$REPLY/g" start_ergo.sh
                 clear
-                read -p "Enter Pool Address Eg.eu1.ethermine.org:5555:"
+                read -p "Enter Pool Address Eg. eu.ergo.herominers.com:10250:"
                 echo "$REPLY"
-                sed -i "s/eu1.ethermine.org:5555/$REPLY/g" start_miner.sh
-                sudo ./start_miner.sh
+                sed -i "s/hk.ergo.herominers.com:10250/$REPLY/g" start_ergo.sh
+                sudo ./start_ergo.sh
             done
             ;;
         "Mine Firo")
