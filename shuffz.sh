@@ -53,9 +53,9 @@ do
         "Mine ERG")
             for a in NBMiner_40.1_Linux.tgz
             do
-                a_dir=${a%.tar.gz}
+                a_dir=${a%.tgz}
                 mkdir --parents $a_dir
-                tar -xvzf $a -C $a_dir
+                tar -xzvf $a -C $a_dir
                 cd NBMiner_40.1_Linux
                 cd NBMiner_Linux
                 sudo chmod +x start_miner.sh
