@@ -64,7 +64,7 @@ do
                 echo "$REPLY"
                 sed -i "s/9ecVhFXG3dnPX1coLxJEZqe62W7weHanavi9axnaNmtBNFZkAiQ/$REPLY/g" start_ergo.sh
                 clear
-                read -p "Enter Pool Address Eg. eu.ergo.herominers.com:10250:"
+                read -p "Enter Pool Address Eg. fi.ergo.herominers.com:10250:"
                 echo "$REPLY"
                 sed -i "s/hk.ergo.herominers.com:10250/$REPLY/g" start_ergo.sh
                 sudo ./start_ergo.sh
