@@ -23,7 +23,7 @@ beamfYBq32SztadXNQ3lZNoPpitpmfQDAAA=
 echo -e "Shuffz Mining Script \n" 
 
 PS3='Please enter your choice: '
-options=("Mine ETH" "Mine ERG" "Mine Firo" "Mine Flux" "NiceHash" "Donate Core" "Quit")
+options=("Mine ETH" "Mine ERG" "Mine Firo" "Mine Flux" "NiceHash" "Donate Core" "Mine VRSC CPU Mining" "Mine XMR" "Mine RVN" "Mixed Algo" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
