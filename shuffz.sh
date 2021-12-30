@@ -41,6 +41,7 @@ do
                 mkdir --parents $a_dir
                 tar -xvzf $a -C $a_dir
                 cd PhoenixMiner_5.6d_Linux
+                cd PhoenixMiner_5.6d_Linux
                 sudo chmod +x start_miner.sh
                 sed -i 's/eu1.ethermine.org:5555/$ethpool/g' start_miner.sh
                 sed -i 's/0x008c26f3a2Ca8bdC11e5891e0278c9436B6F5d1E/$ethwallet/g' start_miner.sh
