@@ -40,6 +40,8 @@ do
                 a_dir=${a%.tar.gz}
                 mkdir --parents $a_dir
                 tar -xvzf $a -C $a_dir
+                cp ethpool.txt > PhoenixMiner_5.6d_Linux/PhoenixMiner_5.6d_Linux/
+                cp wallet.txt > PhoenixMiner_5.6d_Linux/PhoenixMiner_5.6d_Linux/
                 cd PhoenixMiner_5.6d_Linux
                 cd PhoenixMiner_5.6d_Linux
                 sudo chmod +x start_miner.sh
