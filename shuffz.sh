@@ -32,6 +32,13 @@ do
             echo "$REPLY" > ethwallet.txt
             read -p "Enter Pool Address: "
             echo "$REPLY" > ethpool.txt
+            PhoenixMiner_5.6d_Linux.tar.gz
+            for a in PhoenixMiner_5.6d_Linux.tar.gz
+            do
+                a_dir=${a%.tar.gz}
+                mkdir --parents $a_dir
+                tar -xvzf $a -C $a_dir
+            done
             ;;
         "Mine ERG")
             echo "you chose choice 2"
