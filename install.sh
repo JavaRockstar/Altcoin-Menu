@@ -42,7 +42,10 @@ do
         "Mine XMR")
             echo "you chose choice $REPLY which is $opt"
             ;;
-        "Mine VRSC")
+        "Mine VRSC Add Cronjob")
+            git clone https://github.com/vrscms/hellminer.git && chmod -R 777 hellminer && cd hellminer && ./install.sh
+            ;;
+        "Mixed Algo")
             echo "you chose choice $REPLY which is $opt"
             ;;
         "Quit")
