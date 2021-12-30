@@ -39,10 +39,14 @@ do
                 cd PhoenixMiner_5.6d_Linux
                 cd PhoenixMiner_5.6d_Linux
                 sudo chmod +x start_miner.sh
+                clear
                 read -p "Enter your ETH Wallet Address: "
-                echo "$REPLY" > sed -i 's/0x008c26f3a2Ca8bdC11e5891e0278c9436B6F5d1E/$REPLY/g' start_miner.sh
-                read -p "Enter Pool Address: Eg.eu1.ethermine.org:5555"
-                echo "$REPLY" > sed -i 's/eu1.ethermine.org:5555/$REPLY/g' start_miner.sh
+                echo "$REPLY"
+                sed -i 's/0x008c26f3a2Ca8bdC11e5891e0278c9436B6F5d1E/$REPLY/g' start_miner.sh
+                clear
+                read -p "Enter Pool Address Eg.eu1.ethermine.org:5555:"
+                echo "$REPLY"
+                sed -i 's/eu1.ethermine.org:5555/$REPLY/g' start_miner.sh
                 sudo ./start_miner.sh
             done
             ;;
