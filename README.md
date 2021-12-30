@@ -16,3 +16,6 @@ https://www.coincalculators.io/api/
 | Flux        |             |
 | XMR         |             |
 | Verus       |             |
+
+HiveOS NVIDIA Linux Driver
+http://us.download.nvidia.com/XFree86/Linux-x86_64/430.09/NVIDIA-Linux-x86_64-430.09.run
