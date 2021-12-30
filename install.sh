@@ -30,6 +30,8 @@ do
         "Mine ETH")
             read -p "Enter your ETH Wallet Address: "
             echo "$REPLY" > ethwallet.txt
+            read -p "Enter Pool Address: "
+            echo "$REPLY" > ethpool.txt
             ;;
         "Mine ERG")
             echo "you chose choice 2"
