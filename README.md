@@ -1,4 +1,4 @@
-# linux-mining-profit-switching
+# Shuffz Mixed Algo Miner
 
 Most the time I use HiveOS for mining various cryptocurrency with my GPU's. But sometimes when working native Linux systems without any mining software pre-installed it can be time consuming setting up mining software.
 
