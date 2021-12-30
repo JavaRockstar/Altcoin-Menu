@@ -28,7 +28,8 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Mine ETH")
-            echo "you chose choice 1"
+            read -p "Enter your ETH Wallet Address: "
+            echo "$REPLY" > ethwallet.txt
             ;;
         "Mine ERG")
             echo "you chose choice 2"
@@ -45,7 +46,8 @@ do
             echo "$REPLY" > rvnwallet.txt
             ;;
         "Mine Flux")
-            echo "you chose choice 2"
+            read -p "Enter your FLUX Wallet Address: "
+            echo "$REPLY" > fluxwallet.txt
             ;;
         "Mine XMR")
             echo "you chose choice $REPLY which is $opt"
