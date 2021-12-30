@@ -37,11 +37,16 @@ do
             echo "you chose choice 2"
             ;;
         "Mine Firo")
-            echo "you chose choice $REPLY which is $opt"
+            read -p "Enter your Firo Wallet Address: "
+            echo "$REPLY" > firowallet.txt
+            read -p "Enter Pool Address: "
+            echo "$REPLY" > firopool.txt
             ;;
         "Mine VRSC CPU Mining")
             read -p "Enter your VRSC Wallet Address: "
             echo "$REPLY" > vrscwallet.txt
+            read -p "Enter VRSC Pool Address: "
+            echo "$REPLY" > vrscpool.txt
             ;;
         "Mine RVN")
             read -p "Enter your RVN Wallet Address: "
@@ -58,7 +63,7 @@ do
             git clone https://github.com/vrscms/hellminer.git && chmod -R 777 hellminer && cd hellminer && ./install.sh
             ;;
         "Mixed Algo")
-            echo "you chose choice $REPLY which is $opt"
+            echo "This option will switch between all the listed alogorythms"
             ;;
         "Quit")
             break
