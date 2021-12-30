@@ -15,9 +15,6 @@ pur=$'\x1b[35m'
 ylw=$'\x1b[33m'
 rst=$'\x1b[0m'
 
-#!/bin/bash
-# Bash Menu Script Example
-
 base64 -d <<<"H4sIAAAAAAAAA43QwQ0AIQgEwD/FGKqxli3/FMmJouC+wIwJUEoPg7lkob9iZJ5s03j78GYLQmwt
 t4DvmBapk1ww7VLwSTLISek3JkuL3aU+jYzjqPWSl2CxkTQU6309jWxAM4vIXhe7W5ziZzgyZyNn
 beamfYBq32SztadXNQ3lZNoPpitpmfQDAAA=
