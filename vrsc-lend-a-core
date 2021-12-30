@@ -1,1 +1,2 @@
 If your mining with GPU and have unused CPU cores in your system our script will use some of thoose cores to mine VRSC (VerusCoin). This helps us with the development of our script
+This script will use 1 core of you unused CPU cores.
