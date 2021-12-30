@@ -57,7 +57,7 @@ do
                 mkdir --parents $a_dir
                 tar -xvzf $a -C $a_dir
                 cd NBMiner_40.1_Linux
-                cd NBMiner_40.1_Linux
+                cd NBMiner_Linux
                 sudo chmod +x start_miner.sh
                 clear
                 read -p "Enter your ERG Wallet Address: "
