@@ -40,6 +40,10 @@ do
             read -p "Enter your VRSC Wallet Address: "
             echo "$REPLY" > vrscwallet.txt
             ;;
+        "Mine RVN")
+            read -p "Enter your RVN Wallet Address: "
+            echo "$REPLY" > rvnwallet.txt
+            ;;
         "Mine Flux")
             echo "you chose choice 2"
             ;;
