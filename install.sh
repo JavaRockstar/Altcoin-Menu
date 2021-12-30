@@ -36,6 +36,10 @@ do
         "Mine Firo")
             echo "you chose choice $REPLY which is $opt"
             ;;
+        "Mine VRSC CPU Mining")
+            read -p "Enter your VRSC Wallet Address: "
+            echo "$REPLY" > vrscwallet.txt
+            ;;
         "Mine Flux")
             echo "you chose choice 2"
             ;;
