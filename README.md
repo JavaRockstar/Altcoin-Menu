@@ -10,10 +10,10 @@ https://www.coincalculators.io/api/
 | Coins/Tokens| Mining Software|
 | ----------- | ----------- |
 | Ethereum    |             |
-| Ergo        |             |
+| Ergo        | nbminer     |
 | Flux        |             |
 | XMR         |             |
-| Verus       |             |
+| Verus       | hellminer   |
 
 HiveOS NVIDIA Linux Driver
 http://us.download.nvidia.com/XFree86/Linux-x86_64/430.09/NVIDIA-Linux-x86_64-430.09.run
