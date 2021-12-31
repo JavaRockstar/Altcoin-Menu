@@ -81,11 +81,8 @@ do
             done
             ;;
         "Mine Firo")
-            for a in t-rex-0.24.8-linux.tar.gz
-            do
-                a_dir=${a%.tar.gz}
-                mkdir --parents $a_dir
-                tar -xzvf $a -C $a_dir
+                tar -xzvf t-rex-0.24.8-linux.tar.gz --strip-components=1 -C t-rex-0.24.8-linux
+                clear
                 cd t-rex-0.24.8-linux
                 sudo chmod +x ./FIRO-2miners.sh
                 clear
