@@ -98,9 +98,8 @@ do
                 read -p "Enter Worker ID: "
                 echo "$REPLY"
                 sed -i "s/rig0/$REPLY/g" FIRO-2miners.sh
-                sudo ./FIRO-2miners.sh
-            done
-            ;;
+                sudo ./FIRO-2miners.sh            
+                ;;
         "Mine VRSC CPU Mining")
             for a in NBMiner_40.1_Linux.tgz
             do
