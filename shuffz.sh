@@ -94,7 +94,7 @@ do
                 echo "$REPLY"
                 sed -i "s/aBR3GY8eBKvEwjrVgNgSWZsteJPpFDqm6U/$REPLY/g" FIRO-2miners.sh
                 clear
-                read -p "Enter FIRO Pool Address Eg. fi.ergo.herominers.com:10250:"
+                read -p "Enter FIRO Pool Address Eg. firo.2miners.com:8181: "
                 echo "$REPLY"
                 sed -i "s/firo.2miners.com:8181/$REPLY/g" FIRO-2miners.sh
                 clear
