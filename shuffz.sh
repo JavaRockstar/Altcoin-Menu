@@ -170,7 +170,7 @@ do
                 clear
                 read -p "Enter Worker ID: "
                 echo "$REPLY"
-                sed -i "s/rig-id": null/rig-id": $REPLY/g" config.json
+                sed -i "s/worker1/$REPLY/g" config.json
                 sudo ./xmrig
             done
             ;;
