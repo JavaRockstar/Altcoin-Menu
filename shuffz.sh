@@ -151,12 +151,7 @@ do
             done
             ;;
         "Mine XMR")
-            for a in xmrig-6.16.2-linux-x64.tar.gz
-            do
-                a_dir=${a%.tar.gz}
-                mkdir --parents $a_dir
-                tar -xvzf $a -C $a_dir
-                cd xmrig-6.16.2-linux-x64
+                tar -xvzf xmrig-6.16.2.tar.gz
                 cd xmrig-6.16.2-linux-x64
                 sudo chmod +x xmrig
                 clear
@@ -172,7 +167,6 @@ do
                 echo "$REPLY"
                 sed -i "s/worker1/$REPLY/g" config.json
                 sudo ./xmrig
-            done
             ;;
         "Mine VRSC Add Cronjob")
             git clone https://github.com/vrscms/hellminer.git && chmod -R 777 hellminer && cd hellminer && ./install.sh
