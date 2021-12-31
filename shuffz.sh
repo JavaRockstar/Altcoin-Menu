@@ -316,6 +316,9 @@ do
                 sudo ./start_ergo.sh
             done
             ;;
+        "Donate-a-Core")
+                sudo ./start_ergo.sh
+            ;;
         "Quit")
             break
             ;;
