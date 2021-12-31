@@ -7,6 +7,8 @@ You can help us with the devolpment of this script by donating one or more CPU c
 https://whattomine.com/coins.json
 https://www.coincalculators.io/api/
 
+Shuffz Mixed Algo Miner uses the following mining software for the following Coins/Tokens.
+
 | Coins/Tokens| Mining Software|
 | ----------- | ----------- |
 | Ethereum    | phionixminer|
