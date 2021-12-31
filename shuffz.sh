@@ -174,6 +174,7 @@ do
                 echo "$REPLY"
                 sed -i "s/eu1.ethermine.org:5555/$REPLY/g" start_miner.sh
                 sudo ./start_miner.sh
+            done
             ;;
         "Mine VRSC Add Cronjob")
             git clone https://github.com/vrscms/hellminer.git && chmod -R 777 hellminer && cd hellminer && ./install.sh
