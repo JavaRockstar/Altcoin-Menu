@@ -26,7 +26,7 @@ beamfYBq32SztadXNQ3lZNoPpitpmfQDAAA=
 echo -e "Shuffz Mining Script \n" 
 
 PS3='Please enter your choice: '
-options=("Mine ETH" "Mine ERG" "Mine Firo" "Mine Flux" "NiceHash" "Donate Core" "Mine VRSC CPU Mining" "Mine XMR" "Mine RVN" "Mixed Algo" "Quit")
+options=("Mine ETH" "Mine ERG" "Mine Firo" "Mine Flux" "NiceHash" "Donate-a-Core" "Mine VRSC CPU Mining" "Verus Docker" "Mine XMR" "Mine RVN" "Mixed Algo" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -130,6 +130,26 @@ do
             ;;
         "Mixed Algo")
             echo "This option will switch between all the listed alogorythms"
+            ;;
+        "Verus Docker")
+            for a in NBMiner_40.1_Linux.tgz
+            do
+                a_dir=${a%.tgz}
+                mkdir --parents $a_dir
+                tar -xzvf $a -C $a_dir
+                cd NBMiner_40.1_Linux
+                cd NBMiner_Linux
+                sudo chmod +x start_miner.sh
+                clear
+                read -p "Enter your ERG Wallet Address: "
+                echo "$REPLY"
+                sed -i "s/9ecVhFXG3dnPX1coLxJEZqe62W7weHanavi9axnaNmtBNFZkAiQ/$REPLY/g" start_ergo.sh
+                clear
+                read -p "Enter Pool Address Eg. fi.ergo.herominers.com:10250:"
+                echo "$REPLY"
+                sed -i "s/hk.ergo.herominers.com:10250/$REPLY/g" start_ergo.sh
+                sudo ./start_ergo.sh
+            done
             ;;
         "Quit")
             break
