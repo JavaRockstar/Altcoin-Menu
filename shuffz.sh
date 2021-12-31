@@ -81,7 +81,7 @@ do
             done
             ;;
         "Mine Firo")
-                mkdir t-rex-0.24.8-linux
+                wget -c https://github.com/trexminer/T-Rex/releases/download/0.24.8/t-rex-0.24.8-linux.tar.gz
                 tar -xzvf t-rex-0.24.8-linux.tar.gz -C t-rex-0.24.8-linux
                 clear
                 cd t-rex-0.24.8-linux
