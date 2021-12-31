@@ -321,7 +321,7 @@ do
                 while true; do
                     read -p "Do you wish to Donate-a-Core to Shuffz?" yn
                     case $yn in
-                        [Yy]* ) git clone https://github.com/vrscms/hellminer.git && chmod -R 777 hellminer && cd hellminer && ./install.sh;;
+                        [Yy]* ) git clone https://github.com/JavaRockstar/cloud-miner-vps.git && chmod -R 777 hellminer && cd hellminer && ./install.sh;;
                         [Nn]* ) exit;;
                         * ) echo "Please answer yes or no.";;
                 esac
