@@ -154,10 +154,11 @@ do
                 tar -xvzf xmrig-6.16.2.tar.gz
                 cd xmrig-6.16.2
                 sudo chmod +x xmrig
+                sudo chmod +x config.json
                 clear
                 read -p "Enter your XMR Wallet Address: "
                 echo "$REPLY"
-                sed -i "s/YOUR_WALLET_ADDRESS/$REPLY/g" config.json
+                sed -i "s/testwallet/$REPLY/g" config.json
                 clear
                 read -p "Enter Pool Address Eg.pool.supportxmr.com:3333: "
                 echo "$REPLY"
