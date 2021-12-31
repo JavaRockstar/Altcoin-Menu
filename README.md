@@ -1,4 +1,4 @@
-# Shuffz Mixed Algo Miner
+# Shuffz Altcoin Miner
 
 This script is designed to mine whatever altcoin the user chooses. The script will ask for the user for the pool address and wallet address and worker ID as input.
 
