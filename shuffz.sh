@@ -87,8 +87,24 @@ do
             echo "$REPLY" > rvnwallet.txt
             ;;
         "Mine Flux")
-            read -p "Enter your FLUX Wallet Address: "
-            echo "$REPLY" > fluxwallet.txt
+            for a in lolMiner_v1.38_Lin64.tar.gz
+            do
+                a_dir=${a%.tar.gz}
+                mkdir --parents $a_dir
+                tar -xzvf $a -C $a_dir
+                cd lolMiner_v1.38_Lin64
+                cd 1.38
+                sudo chmod +x mine_flux.sh
+                clear
+                read -p "Enter your FLUX Wallet Address: "
+                echo "$REPLY"
+                sed -i "s/t1cLkQpx3kEJw2TjPnTmCpe4KqLvER8NknA/$REPLY/g" mine_flux.sh
+                clear
+                read -p "Enter Flux Mining Pool Address Eg. fi.flux.herominers.com:1200:"
+                echo "$REPLY"
+                sed -i "s/de.flux.herominers.com:1200/$REPLY/g" mine_flux.sh
+                sudo ./mine_flux.sh
+            done
             ;;
         "Mine XMR")
             for a in xmrig-6.16.2-linux-x64.tar.gz
