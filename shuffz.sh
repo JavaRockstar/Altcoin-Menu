@@ -81,27 +81,27 @@ do
             done
             ;;
         "Mine Firo")
-            for a in NBMiner_40.1_Linux.tgz
+            for a in t-rex-0.24.8-linux.tar.gz
             do
-                a_dir=${a%.tgz}
+                a_dir=${a%.tar.gz}
                 mkdir --parents $a_dir
                 tar -xzvf $a -C $a_dir
-                cd NBMiner_40.1_Linux
-                cd NBMiner_Linux
-                sudo chmod +x start_miner.sh
+                cd t-rex-0.24.8-linux
+                cd t-rex-0.24.8-linux
+                sudo chmod +x ./FIRO-2miners.sh
                 clear
                 read -p "Enter your FIRO Wallet Address: "
                 echo "$REPLY"
-                sed -i "s/9ecVhFXG3dnPX1coLxJEZqe62W7weHanavi9axnaNmtBNFZkAiQ/$REPLY/g" start_ergo.sh
+                sed -i "s/aBR3GY8eBKvEwjrVgNgSWZsteJPpFDqm6U/$REPLY/g" FIRO-2miners.sh
                 clear
                 read -p "Enter FIRO Pool Address Eg. fi.ergo.herominers.com:10250:"
                 echo "$REPLY"
-                sed -i "s/hk.ergo.herominers.com:10250/$REPLY/g" start_ergo.sh
+                sed -i "s/firo.2miners.com:8181/$REPLY/g" FIRO-2miners.sh
                 clear
                 read -p "Enter Worker ID: "
                 echo "$REPLY"
-                sed -i "s/default/$REPLY/g" start_ergo.sh
-                sudo ./start_ergo.sh
+                sed -i "s/rig0/$REPLY/g" FIRO-2miners.sh
+                sudo ./FIRO-2miners.sh
             done
             ;;
         "Mine VRSC CPU Mining")
