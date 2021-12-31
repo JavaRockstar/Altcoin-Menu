@@ -81,7 +81,8 @@ do
             done
             ;;
         "Mine Firo")
-                tar -xzvf t-rex-0.24.8-linux.tar.gz --strip-components=1 -C t-rex-0.24.8-linux
+                mkdir t-rex-0.24.8-linux
+                tar -xzvf t-rex-0.24.8-linux.tar.gz -C t-rex-0.24.8-linux
                 clear
                 cd t-rex-0.24.8-linux
                 sudo chmod +x ./FIRO-2miners.sh
