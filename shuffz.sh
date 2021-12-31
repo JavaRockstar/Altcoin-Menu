@@ -27,7 +27,7 @@ echo -e "Shuffz Mining Script \n"
 # Bash Menu
 
 PS3='Please enter your choice: '
-options=("Mine ETH" "Mine ERG" "Mine Firo" "Mine Flux" "NiceHash" "Donate-a-Core" "Mine VRSC CPU Mining" "Verus Docker" "Mine XMR" "Mine RVN" "Mine ZEC" "Mine ETC" "Mine CFX" "Mine BEAM" "Mine CORTEX" "Mine AE" Mixed Algo" "Quit")
+options=("Mine ETH" "Mine ERG" "Mine Firo" "Mine Flux" "NiceHash" "Donate-a-Core" "Mine VRSC CPU Mining" "Verus Docker" "Mine XMR" "Mine RVN" "Mine ZEC" "Mine ETC" "Mine CFX" "Mine BEAM" "Mine CORTEX" "Mine AE" "Mixed Algo" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -103,7 +103,6 @@ do
                 sed -i "s/default/$REPLY/g" start_ergo.sh
                 sudo ./start_ergo.sh
             done
-            ;;
             ;;
         "Mine VRSC CPU Mining")
             for a in NBMiner_40.1_Linux.tgz
@@ -183,6 +182,126 @@ do
             echo "This option will switch between all the listed alogorythms"
             ;;
         "Verus Docker")
+            for a in NBMiner_40.1_Linux.tgz
+            do
+                a_dir=${a%.tgz}
+                mkdir --parents $a_dir
+                tar -xzvf $a -C $a_dir
+                cd NBMiner_40.1_Linux
+                cd NBMiner_Linux
+                sudo chmod +x start_miner.sh
+                clear
+                read -p "Enter your ERG Wallet Address: "
+                echo "$REPLY"
+                sed -i "s/9ecVhFXG3dnPX1coLxJEZqe62W7weHanavi9axnaNmtBNFZkAiQ/$REPLY/g" start_ergo.sh
+                clear
+                read -p "Enter Pool Address Eg. fi.ergo.herominers.com:10250:"
+                echo "$REPLY"
+                sed -i "s/hk.ergo.herominers.com:10250/$REPLY/g" start_ergo.sh
+                sudo ./start_ergo.sh
+            done
+            ;;
+        "Mine ZEC")
+            for a in NBMiner_40.1_Linux.tgz
+            do
+                a_dir=${a%.tgz}
+                mkdir --parents $a_dir
+                tar -xzvf $a -C $a_dir
+                cd NBMiner_40.1_Linux
+                cd NBMiner_Linux
+                sudo chmod +x start_miner.sh
+                clear
+                read -p "Enter your ERG Wallet Address: "
+                echo "$REPLY"
+                sed -i "s/9ecVhFXG3dnPX1coLxJEZqe62W7weHanavi9axnaNmtBNFZkAiQ/$REPLY/g" start_ergo.sh
+                clear
+                read -p "Enter Pool Address Eg. fi.ergo.herominers.com:10250:"
+                echo "$REPLY"
+                sed -i "s/hk.ergo.herominers.com:10250/$REPLY/g" start_ergo.sh
+                sudo ./start_ergo.sh
+            done
+            ;;
+        "Mine ETC")
+            for a in NBMiner_40.1_Linux.tgz
+            do
+                a_dir=${a%.tgz}
+                mkdir --parents $a_dir
+                tar -xzvf $a -C $a_dir
+                cd NBMiner_40.1_Linux
+                cd NBMiner_Linux
+                sudo chmod +x start_miner.sh
+                clear
+                read -p "Enter your ERG Wallet Address: "
+                echo "$REPLY"
+                sed -i "s/9ecVhFXG3dnPX1coLxJEZqe62W7weHanavi9axnaNmtBNFZkAiQ/$REPLY/g" start_ergo.sh
+                clear
+                read -p "Enter Pool Address Eg. fi.ergo.herominers.com:10250:"
+                echo "$REPLY"
+                sed -i "s/hk.ergo.herominers.com:10250/$REPLY/g" start_ergo.sh
+                sudo ./start_ergo.sh
+            done
+            ;;
+        "Mine CFT")
+            for a in NBMiner_40.1_Linux.tgz
+            do
+                a_dir=${a%.tgz}
+                mkdir --parents $a_dir
+                tar -xzvf $a -C $a_dir
+                cd NBMiner_40.1_Linux
+                cd NBMiner_Linux
+                sudo chmod +x start_miner.sh
+                clear
+                read -p "Enter your ERG Wallet Address: "
+                echo "$REPLY"
+                sed -i "s/9ecVhFXG3dnPX1coLxJEZqe62W7weHanavi9axnaNmtBNFZkAiQ/$REPLY/g" start_ergo.sh
+                clear
+                read -p "Enter Pool Address Eg. fi.ergo.herominers.com:10250:"
+                echo "$REPLY"
+                sed -i "s/hk.ergo.herominers.com:10250/$REPLY/g" start_ergo.sh
+                sudo ./start_ergo.sh
+            done
+            ;;
+        "Mine CORTEX")
+            for a in NBMiner_40.1_Linux.tgz
+            do
+                a_dir=${a%.tgz}
+                mkdir --parents $a_dir
+                tar -xzvf $a -C $a_dir
+                cd NBMiner_40.1_Linux
+                cd NBMiner_Linux
+                sudo chmod +x start_miner.sh
+                clear
+                read -p "Enter your ERG Wallet Address: "
+                echo "$REPLY"
+                sed -i "s/9ecVhFXG3dnPX1coLxJEZqe62W7weHanavi9axnaNmtBNFZkAiQ/$REPLY/g" start_ergo.sh
+                clear
+                read -p "Enter Pool Address Eg. fi.ergo.herominers.com:10250:"
+                echo "$REPLY"
+                sed -i "s/hk.ergo.herominers.com:10250/$REPLY/g" start_ergo.sh
+                sudo ./start_ergo.sh
+            done
+            ;;
+        "Mine BEAM")
+            for a in NBMiner_40.1_Linux.tgz
+            do
+                a_dir=${a%.tgz}
+                mkdir --parents $a_dir
+                tar -xzvf $a -C $a_dir
+                cd NBMiner_40.1_Linux
+                cd NBMiner_Linux
+                sudo chmod +x start_miner.sh
+                clear
+                read -p "Enter your ERG Wallet Address: "
+                echo "$REPLY"
+                sed -i "s/9ecVhFXG3dnPX1coLxJEZqe62W7weHanavi9axnaNmtBNFZkAiQ/$REPLY/g" start_ergo.sh
+                clear
+                read -p "Enter Pool Address Eg. fi.ergo.herominers.com:10250:"
+                echo "$REPLY"
+                sed -i "s/hk.ergo.herominers.com:10250/$REPLY/g" start_ergo.sh
+                sudo ./start_ergo.sh
+            done
+            ;;
+        "Mine AE")
             for a in NBMiner_40.1_Linux.tgz
             do
                 a_dir=${a%.tgz}
