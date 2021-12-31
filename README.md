@@ -1,6 +1,6 @@
 # Shuffz Mixed Algo Miner
 
-This script is designed to mine whatever cryptocurrency the user chooses only asking the user for the pool address and wallet address as input.
+This script is designed to mine whatever altcoin the user chooses. The script will ask for the user for the pool address and wallet address and worker ID as input.
 
 You can help us with the devolpment of this script by running donate-a-core by donating one or more CPU cores to our project we can use these cores to mine a small amount of Coins/Tokens that can be used to further develop different user mining scripts.
 
