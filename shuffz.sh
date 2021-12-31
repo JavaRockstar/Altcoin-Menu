@@ -87,7 +87,6 @@ do
                 mkdir --parents $a_dir
                 tar -xzvf $a -C $a_dir
                 cd t-rex-0.24.8-linux
-                cd t-rex-0.24.8-linux
                 sudo chmod +x ./FIRO-2miners.sh
                 clear
                 read -p "Enter your FIRO Wallet Address: "
