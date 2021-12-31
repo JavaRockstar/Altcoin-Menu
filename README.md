@@ -2,7 +2,7 @@
 
 This script is designed to mine whatever cryptocurrency the user chooses only asking the user for the pool address and wallet address as input.
 
-You can help us with the devolpment of this script by donating one or more CPU cores to our project we will use these cores to mine VRSC.
+You can help us with the devolpment of this script by running donate-a-core by donating one or more CPU cores to our project we can use these cores to mine a small amount of Coins/Tokens that can be used to further develop different user mining scripts.
 
 https://whattomine.com/coins.json
 https://www.coincalculators.io/api/
