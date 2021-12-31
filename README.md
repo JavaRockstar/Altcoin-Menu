@@ -1,11 +1,12 @@
 # Shuffz Altcoin Miner
 
-This script is designed to mine whatever altcoin the user chooses. The script will ask for the user for the pool address and wallet address and worker ID as input.
+This script is written in Bash (Bourne Again SHell). 
 
-You can help us with the devolpment of this script by running donate-a-core by donating one or more CPU cores to our project we can use these cores to mine a small amount of Coins/Tokens that can be used to further develop different user mining scripts.
+Shuffz Altcoin Miner is a Bash Script that was created to make it easier to start mining altcoins in Linux. 
 
-https://whattomine.com/coins.json
-https://www.coincalculators.io/api/
+# donate-a-core 
+
+By donating one or more CPU cores to our project we can use these cores to mine a small amount of Coins/Tokens that can be used to further develop of user mining scripts.
 
 Shuffz Mixed Algo Miner uses the following mining software for the following Coins/Tokens.
 
@@ -21,7 +22,6 @@ Shuffz Mixed Algo Miner uses the following mining software for the following Coi
 HiveOS NVIDIA Linux Driver
 http://us.download.nvidia.com/XFree86/Linux-x86_64/430.09/NVIDIA-Linux-x86_64-430.09.run
 
-# Mixed Algo Mining Timing
+# Mixed Algo Mining
 
-24 Hours = 4 Hours ETH + 4 Hours ERG + 4 Hours Flux + 4 Hours Firo + 4 Hours RVN + 4 Hours XMR
-24 Hours = 12 Hours VerusCoin CPU Mining + 12 Hour XMR CPU Mining
+NiceHash
