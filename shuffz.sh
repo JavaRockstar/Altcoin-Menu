@@ -152,7 +152,7 @@ do
             ;;
         "Mine XMR")
                 tar -xvzf xmrig-6.16.2.tar.gz
-                cd xmrig-6.16.2-linux-x64
+                cd xmrig-6.16.2
                 sudo chmod +x xmrig
                 clear
                 read -p "Enter your XMR Wallet Address: "
