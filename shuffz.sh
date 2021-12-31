@@ -158,16 +158,20 @@ do
                 tar -xvzf $a -C $a_dir
                 cd xmrig-6.16.2-linux-x64
                 cd xmrig-6.16.2-linux-x64
-                sudo chmod +x start_miner.sh
+                sudo chmod +x xmrig
                 clear
                 read -p "Enter your XMR Wallet Address: "
                 echo "$REPLY"
-                sed -i "s/0x008c26f3a2Ca8bdC11e5891e0278c9436B6F5d1E/$REPLY/g" start_miner.sh
+                sed -i "s/YOUR_WALLET_ADDRESS/$REPLY/g" config.json
                 clear
-                read -p "Enter Pool Address Eg.eu1.ethermine.org:5555:"
+                read -p "Enter Pool Address Eg.pool.supportxmr.com:3333: "
                 echo "$REPLY"
-                sed -i "s/eu1.ethermine.org:5555/$REPLY/g" start_miner.sh
-                sudo ./start_miner.sh
+                sed -i "s/donate.v2.xmrig.com:3333/$REPLY/g" config.json
+                clear
+                read -p "Enter Worker ID: "
+                echo "$REPLY"
+                sed -i "s/rig-id": null/rig-id": $REPLY/g" config.json
+                sudo ./xmrig
             done
             ;;
         "Mine VRSC Add Cronjob")
