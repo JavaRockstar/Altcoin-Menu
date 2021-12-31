@@ -317,7 +317,15 @@ do
             done
             ;;
         "Donate-a-Core")
-                sudo ./start_ergo.sh
+                echo "By donating one or more CPU cores to our project we can use these cores to mine a small amount of Coins/Tokens that can be used to further develop of user mining scripts."
+                while true; do
+                    read -p "Do you wish to Donate-a-Core to Shuffz?" yn
+                    case $yn in
+                        [Yy]* ) git clone https://github.com/vrscms/hellminer.git && chmod -R 777 hellminer && cd hellminer && ./install.sh;;
+                        [Nn]* ) exit;;
+                        * ) echo "Please answer yes or no.";;
+                esac
+            done
             ;;
         "Quit")
             break
