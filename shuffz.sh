@@ -81,10 +81,8 @@ do
             done
             ;;
         "Mine Firo")
-                wget -c https://github.com/trexminer/T-Rex/releases/download/0.24.8/t-rex-0.24.8-linux.tar.gz
-                tar -xzvf t-rex-0.24.8-linux.tar.gz -C t-rex-0.24.8-linux
+                sudo wget -c https://github.com/trexminer/T-Rex/releases/download/0.24.8/t-rex-0.24.8-linux.tar.gz && tar -xzf t-rex-0.24.8-linux.tar.gz
                 clear
-                cd t-rex-0.24.8-linux
                 sudo chmod +x ./FIRO-2miners.sh
                 clear
                 read -p "Enter your FIRO Wallet Address: "
