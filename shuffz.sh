@@ -71,20 +71,61 @@ do
                 read -p "Enter Pool Address Eg. fi.ergo.herominers.com:10250:"
                 echo "$REPLY"
                 sed -i "s/hk.ergo.herominers.com:10250/$REPLY/g" start_ergo.sh
+                clear
+                read -p "Enter Worker ID: "
+                echo "$REPLY"
+                sed -i "s/default/$REPLY/g" start_ergo.sh
                 sudo ./start_ergo.sh
             done
             ;;
         "Mine Firo")
-            read -p "Enter your Firo Wallet Address: "
-            echo "$REPLY" > firowallet.txt
-            read -p "Enter Pool Address: "
-            echo "$REPLY" > firopool.txt
+            for a in NBMiner_40.1_Linux.tgz
+            do
+                a_dir=${a%.tgz}
+                mkdir --parents $a_dir
+                tar -xzvf $a -C $a_dir
+                cd NBMiner_40.1_Linux
+                cd NBMiner_Linux
+                sudo chmod +x start_miner.sh
+                clear
+                read -p "Enter your ERG Wallet Address: "
+                echo "$REPLY"
+                sed -i "s/9ecVhFXG3dnPX1coLxJEZqe62W7weHanavi9axnaNmtBNFZkAiQ/$REPLY/g" start_ergo.sh
+                clear
+                read -p "Enter Pool Address Eg. fi.ergo.herominers.com:10250:"
+                echo "$REPLY"
+                sed -i "s/hk.ergo.herominers.com:10250/$REPLY/g" start_ergo.sh
+                clear
+                read -p "Enter Worker ID: "
+                echo "$REPLY"
+                sed -i "s/default/$REPLY/g" start_ergo.sh
+                sudo ./start_ergo.sh
+            done
+            ;;
             ;;
         "Mine VRSC CPU Mining")
-            read -p "Enter your VRSC Wallet Address: "
-            echo "$REPLY" > vrscwallet.txt
-            read -p "Enter VRSC Pool Address: "
-            echo "$REPLY" > vrscpool.txt
+            for a in NBMiner_40.1_Linux.tgz
+            do
+                a_dir=${a%.tgz}
+                mkdir --parents $a_dir
+                tar -xzvf $a -C $a_dir
+                cd NBMiner_40.1_Linux
+                cd NBMiner_Linux
+                sudo chmod +x start_miner.sh
+                clear
+                read -p "Enter your ERG Wallet Address: "
+                echo "$REPLY"
+                sed -i "s/9ecVhFXG3dnPX1coLxJEZqe62W7weHanavi9axnaNmtBNFZkAiQ/$REPLY/g" start_ergo.sh
+                clear
+                read -p "Enter Pool Address Eg. fi.ergo.herominers.com:10250:"
+                echo "$REPLY"
+                sed -i "s/hk.ergo.herominers.com:10250/$REPLY/g" start_ergo.sh
+                clear
+                read -p "Enter Worker ID: "
+                echo "$REPLY"
+                sed -i "s/default/$REPLY/g" start_ergo.sh
+                sudo ./start_ergo.sh
+            done
             ;;
         "Mine RVN")
             read -p "Enter your RVN Wallet Address: "
