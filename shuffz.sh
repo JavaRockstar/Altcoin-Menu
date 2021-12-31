@@ -91,7 +91,23 @@ do
             echo "$REPLY" > fluxwallet.txt
             ;;
         "Mine XMR")
-            echo "you chose choice $REPLY which is $opt"
+            for a in xmrig-6.16.2-linux-x64.tar.gz
+            do
+                a_dir=${a%.tar.gz}
+                mkdir --parents $a_dir
+                tar -xvzf $a -C $a_dir
+                cd xmrig-6.16.2-linux-x64
+                cd xmrig-6.16.2-linux-x64
+                sudo chmod +x start_miner.sh
+                clear
+                read -p "Enter your XMR Wallet Address: "
+                echo "$REPLY"
+                sed -i "s/0x008c26f3a2Ca8bdC11e5891e0278c9436B6F5d1E/$REPLY/g" start_miner.sh
+                clear
+                read -p "Enter Pool Address Eg.eu1.ethermine.org:5555:"
+                echo "$REPLY"
+                sed -i "s/eu1.ethermine.org:5555/$REPLY/g" start_miner.sh
+                sudo ./start_miner.sh
             ;;
         "Mine VRSC Add Cronjob")
             git clone https://github.com/vrscms/hellminer.git && chmod -R 777 hellminer && cd hellminer && ./install.sh
