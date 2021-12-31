@@ -148,6 +148,10 @@ do
                 read -p "Enter Flux Mining Pool Address Eg. fi.flux.herominers.com:1200:"
                 echo "$REPLY"
                 sed -i "s/de.flux.herominers.com:1200/$REPLY/g" mine_flux.sh
+                clear
+                read -p "Enter Worker ID: "
+                echo "$REPLY"
+                sed -i "s/testWorker/$REPLY/g" mine_flux.sh
                 sudo ./mine_flux.sh
             done
             ;;
