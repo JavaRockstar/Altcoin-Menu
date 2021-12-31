@@ -1,8 +1,5 @@
 #!/bin/bash
 
-ethwallet = ethwallet.txt
-ethpool = ethpool.txt
-
 #Check if user is root 
 
 while [ "$(whoami)" != "root" ]; do
@@ -18,6 +15,8 @@ pur=$'\x1b[35m'
 ylw=$'\x1b[33m'
 rst=$'\x1b[0m'
 
+# Display ASCII Art Base64
+
 base64 -d <<<"H4sIAAAAAAAAA43QwQ0AIQgEwD/FGKqxli3/FMmJouC+wIwJUEoPg7lkob9iZJ5s03j78GYLQmwt
 t4DvmBapk1ww7VLwSTLISek3JkuL3aU+jYzjqPWSl2CxkTQU6309jWxAM4vIXhe7W5ziZzgyZyNn
 beamfYBq32SztadXNQ3lZNoPpitpmfQDAAA=
@@ -25,12 +24,15 @@ beamfYBq32SztadXNQ3lZNoPpitpmfQDAAA=
 
 echo -e "Shuffz Mining Script \n" 
 
+# Bash Menu
+
 PS3='Please enter your choice: '
 options=("Mine ETH" "Mine ERG" "Mine Firo" "Mine Flux" "NiceHash" "Donate-a-Core" "Mine VRSC CPU Mining" "Verus Docker" "Mine XMR" "Mine RVN" "Mixed Algo" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
         "Mine ETH")
+            # Check for PhionixMiner if exists extract tar.gz
             for a in PhoenixMiner_5.6d_Linux.tar.gz
             do
                 a_dir=${a%.tar.gz}
@@ -88,11 +90,11 @@ do
                 cd NBMiner_Linux
                 sudo chmod +x start_miner.sh
                 clear
-                read -p "Enter your ERG Wallet Address: "
+                read -p "Enter your FIRO Wallet Address: "
                 echo "$REPLY"
                 sed -i "s/9ecVhFXG3dnPX1coLxJEZqe62W7weHanavi9axnaNmtBNFZkAiQ/$REPLY/g" start_ergo.sh
                 clear
-                read -p "Enter Pool Address Eg. fi.ergo.herominers.com:10250:"
+                read -p "Enter FIRO Pool Address Eg. fi.ergo.herominers.com:10250:"
                 echo "$REPLY"
                 sed -i "s/hk.ergo.herominers.com:10250/$REPLY/g" start_ergo.sh
                 clear
