@@ -9,9 +9,9 @@ https://www.coincalculators.io/api/
 
 | Coins/Tokens| Mining Software|
 | ----------- | ----------- |
-| Ethereum    |             |
+| Ethereum    | phionixminer|
 | Ergo        | nbminer     |
-| Flux        |             |
+| Flux        | lolminer    |
 | XMR         | xmrig       |
 | Verus       | hellminer   |
 
