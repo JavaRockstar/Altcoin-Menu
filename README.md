@@ -31,10 +31,18 @@ Shuffz Mixed Algo Miner uses the following mining software for the following Coi
 | Equilibria  |             |
 | Etho        |             |
 | BitcoinGold |             |
-| Zano        |             |
-| Zano        |             |
-| Zano        |             |
-| Zano        |             |
+| HavenProtocol|            |
+| Ycash       |             |
+| EtherGem    |             |
+| Ryo         |             |
+| BitTubeCash |             |
+| Metaverse   |             |
+| Swap        |             |
+| Conceal     |             |
+| Zclassic    |             |
+| Vertcoin    |             |
+
+
 
 
 HiveOS NVIDIA Linux Driver
