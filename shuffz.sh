@@ -176,11 +176,7 @@ do
             echo "This option will switch between all the listed alogorythms"
             ;;
         "Verus Docker")
-            for a in verus-docker.tar.gz
-            do
-                a_dir=${a%.tar.gz}
-                mkdir --parents $a_dir
-                tar -xvzf $a -C $a_dir
+                tar -xvzf verus-docker.tar.gz
                 cd verus-docker
                 sudo chmod +x docker-compose.yml
                 read -p "Enter your VRSC Wallet Address: "
@@ -189,7 +185,6 @@ do
                 docker-compose build
                 docker-compose run linux bash
                 ./mine.sh
-            done
             ;;
         "Mine ZEC")
             for a in NBMiner_40.1_Linux.tgz
