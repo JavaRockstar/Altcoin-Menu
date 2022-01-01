@@ -177,6 +177,7 @@ do
             ;;
         "Verus Docker")
                 tar -xvzf verus-docker.tar.gz
+                clear
                 cd verus-docker
                 sudo chmod +x docker-compose.yml
                 read -p "Enter your VRSC Wallet Address: "
