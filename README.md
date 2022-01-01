@@ -18,6 +18,20 @@ Shuffz Mixed Algo Miner uses the following mining software for the following Coi
 | FIRO        | T-rex       |
 | XMR         | xmrig       |
 | Verus       | hellminer   |
+| Tent        |             |
+| CFX         | hellminer   |
+| BEAM        | hellminer   |
+| CORTEX      | hellminer   |
+| Raptoreum   | hellminer   |
+| Grin        | hellminer   |
+| RavenCoin   | hellminer   |
+| Ellaism     | hellminer   |
+| Zano        | hellminer   |
+
+
+
+options=("Mine ETH" "Mine ERG" "Mine Firo" "Mine Flux" "NiceHash" "Donate-a-Core" "Mine VRSC CPU Mining" "Mine XMR" "Mine RVN" "Mine ZEC" "Mine ETC" "Mine CFX" "Mine BEAM" "Mine CORTEX" "Mine AE" "Mixed Algo" "Mine Raptoreum CPU" "Mine Grin GPU/CPU" "Mine TENT GPU" "Quit")
+
 
 HiveOS NVIDIA Linux Driver
 http://us.download.nvidia.com/XFree86/Linux-x86_64/430.09/NVIDIA-Linux-x86_64-430.09.run
