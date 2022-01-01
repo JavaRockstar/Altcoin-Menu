@@ -27,7 +27,7 @@ echo -e "Shuffz Mining Script \n"
 # Bash Menu
 
 PS3='Please enter your choice: '
-options=("Mine ETH" "Mine ERG" "Mine Firo" "Mine Flux" "NiceHash" "Donate-a-Core" "Mine VRSC CPU Mining" "Mine XMR" "Mine RVN" "Mine ZEC" "Mine ETC" "Mine CFX" "Mine BEAM" "Mine CORTEX" "Mine AE" "Mixed Algo" "Mine Raptoreum CPU" "Quit")
+options=("Mine ETH" "Mine ERG" "Mine Firo" "Mine Flux" "NiceHash" "Donate-a-Core" "Mine VRSC CPU Mining" "Mine XMR" "Mine RVN" "Mine ZEC" "Mine ETC" "Mine CFX" "Mine BEAM" "Mine CORTEX" "Mine AE" "Mixed Algo" "Mine Raptoreum CPU" "Mine Grin GPU/CPU" "Mine TENT GPU" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
