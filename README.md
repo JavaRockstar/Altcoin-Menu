@@ -14,13 +14,13 @@ Shuffz Mixed Algo Miner uses the following mining software for the following Coi
 | FIRO        | T-rex       |N| firo.2miners.com |
 | XMR         | xmrig       |Y|
 | Verus       | hellminer   |N| luckpool.net |
-| Tent        | lolminer    |Y|
+| Tent        | lolminer/gminer|Y|
 | CFX         | nbminer     |N|
 | BEAM        | Bminer      |Y|
-| CORTEX      |             |
-| Raptoreum   |             |
-| Grin        |             |
-| RavenCoin   |             |
+| CORTEX      | lolMiner    |Y|
+| Raptoreum   | xmrig       |N|
+| Grin        | lolminer/gminer|Y|
+| RavenCoin   | nbminer     |Y|
 | Ellaism     |             |
 | Zano        |             |
 | QuarkChain  |             |
