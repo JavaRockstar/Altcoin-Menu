@@ -4,9 +4,7 @@ This script is written in Bash (Bourne Again SHell).
 
 Shuffz Altcoin Miner is a Bash Script that was created to make it easier to start mining altcoins in Linux. 
 
-# donate-a-core 
-
-By donating one or more CPU cores to our project we can use these cores to mine a small amount of Coins/Tokens that can be used to further develop of user mining scripts.
+# Supported Coins/Tokens
 
 Shuffz Mixed Algo Miner uses the following mining software for the following Coins/Tokens.
 
@@ -51,3 +49,7 @@ http://us.download.nvidia.com/XFree86/Linux-x86_64/430.09/NVIDIA-Linux-x86_64-43
 # Mixed Algo Mining
 
 NiceHash
+
+# donate-a-core 
+
+By donating one or more CPU cores to our project we can use these cores to mine a small amount of Coins/Tokens that can be used to further develop of user mining scripts.
