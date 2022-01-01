@@ -6,10 +6,10 @@ Shuffz Altcoin Miner is a Bash Script that was created to make it easier to star
 
 Shuffz Mixed Algo Miner uses the following mining software for the following Coins/Tokens.
 
-| Coins/Tokens| Mining Software| Nvidia/AMD Compatible |
-| ----------- | ----------- |----------- | 
-| Ethereum    | phionixminer|Y| 
-| Ergo        | nbminer     |Y|
+| Coins/Tokens| Mining Software| Nvidia/AMD Compatible | Suggested Pool |
+| ----------- | ----------- |----------- | ----------- | 
+| Ethereum    | phionixminer|Y| ethermine.org (low fees) |
+| Ergo        | nbminer     |Y| herominers.com (low min payout) |
 | Flux        | lolminer    |Y|
 | FIRO        | T-rex       |N|
 | XMR         | xmrig       |Y|
