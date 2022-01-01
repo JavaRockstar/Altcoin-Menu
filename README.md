@@ -11,10 +11,10 @@ Shuffz Mixed Algo Miner uses the following mining software for the following Coi
 | Ethereum    | phionixminer|Y| 
 | Ergo        | nbminer     |Y|
 | Flux        | lolminer    |Y|
-| FIRO        | T-rex       |
-| XMR         | xmrig       |
+| FIRO        | T-rex       |N|
+| XMR         | xmrig       |Y|
 | Verus       | hellminer   |N|
-| Tent        |             |
+| Tent        | lolminer    |Y|
 | CFX         |             |
 | BEAM        |             |
 | CORTEX      |             |
