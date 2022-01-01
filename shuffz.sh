@@ -176,24 +176,15 @@ do
             echo "This option will switch between all the listed alogorythms"
             ;;
         "Verus Docker")
-            for a in NBMiner_40.1_Linux.tgz
-            do
-                a_dir=${a%.tgz}
-                mkdir --parents $a_dir
-                tar -xzvf $a -C $a_dir
-                cd NBMiner_40.1_Linux
-                cd NBMiner_Linux
-                sudo chmod +x start_miner.sh
-                clear
-                read -p "Enter your ERG Wallet Address: "
+                https://github.com/JavaRockstar/verus-docker.git
+                cd verus-docker
+                sudo chmod +x docker-compose.yml
+                read -p "Enter your VRSC Wallet Address: "
                 echo "$REPLY"
-                sed -i "s/9ecVhFXG3dnPX1coLxJEZqe62W7weHanavi9axnaNmtBNFZkAiQ/$REPLY/g" start_ergo.sh
-                clear
-                read -p "Enter Pool Address Eg. fi.ergo.herominers.com:10250:"
-                echo "$REPLY"
-                sed -i "s/hk.ergo.herominers.com:10250/$REPLY/g" start_ergo.sh
-                sudo ./start_ergo.sh
-            done
+                sed -i "s/RMovVQiRqawd8KThXQtKQhgESBPGzrSnXX/$REPLY/g" docker-compose.yml
+                docker-compose build
+                docker-compose run linux bash
+                ./mine.sh
             ;;
         "Mine ZEC")
             for a in NBMiner_40.1_Linux.tgz
@@ -208,8 +199,6 @@ do
                 read -p "Enter your ERG Wallet Address: "
                 echo "$REPLY"
                 sed -i "s/9ecVhFXG3dnPX1coLxJEZqe62W7weHanavi9axnaNmtBNFZkAiQ/$REPLY/g" start_ergo.sh
-                clear
-                read -p "Enter Pool Address Eg. fi.ergo.herominers.com:10250:"
                 echo "$REPLY"
                 sed -i "s/hk.ergo.herominers.com:10250/$REPLY/g" start_ergo.sh
                 sudo ./start_ergo.sh
