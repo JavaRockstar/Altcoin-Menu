@@ -158,7 +158,7 @@ do
                 clear
                 read -p "Enter your XMR Wallet Address: "
                 echo "$REPLY"
-                sed -i "s/testwallet/$REPLY/g" config.json
+                sed -i "s/YOUR_WALLET_ADDRESS/$REPLY/g" config.json
                 clear
                 read -p "Enter Pool Address Eg.pool.supportxmr.com:3333: "
                 echo "$REPLY"
