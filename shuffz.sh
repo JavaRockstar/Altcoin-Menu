@@ -27,7 +27,7 @@ echo -e "Shuffz Mining Script \n"
 # Bash Menu
 
 PS3='Please enter your choice: '
-options=("Mine ETH" "Mine ERG" "Mine Firo" "Mine Flux" "NiceHash" "Donate-a-Core" "Mine VRSC CPU Mining" "Verus Docker" "Mine XMR" "Mine RVN" "Mine ZEC" "Mine ETC" "Mine CFX" "Mine BEAM" "Mine CORTEX" "Mine AE" "Mixed Algo" "Quit")
+options=("Mine ETH" "Mine ERG" "Mine Firo" "Mine Flux" "NiceHash" "Donate-a-Core" "Mine VRSC CPU Mining" "Mine XMR" "Mine RVN" "Mine ZEC" "Mine ETC" "Mine CFX" "Mine BEAM" "Mine CORTEX" "Mine AE" "Mixed Algo" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -174,18 +174,6 @@ do
             ;;
         "Mixed Algo")
             echo "This option will switch between all the listed alogorythms"
-            ;;
-        "Verus Docker")
-                tar -xvzf verus-docker.tar.gz
-                clear
-                cd verus-docker
-                sudo chmod +x docker-compose.yml
-                read -p "Enter your VRSC Wallet Address: "
-                echo "$REPLY"
-                sed -i "s/RMovVQiRqawd8KThXQtKQhgESBPGzrSnXX/$REPLY/g" docker-compose.yml
-                docker-compose build
-                docker-compose run linux bash
-                ./mine.sh
             ;;
         "Mine ZEC")
             for a in NBMiner_40.1_Linux.tgz
