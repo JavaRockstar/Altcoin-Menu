@@ -37,6 +37,16 @@ Shuffz Mixed Algo Miner uses the following mining software for the following Coi
 | Conceal     |             |
 | Zclassic    |             |
 | Vertcoin    |             |
+| Aeon        |             |
+| ArQmA       |             |
+| KevaCoin    |             |
+| MWC         |             |
+| QRL         |             |
+| Scala       |             |
+| TurtleCoin  |             |
+| uPlexa      |             |
+
+
 
 
 
