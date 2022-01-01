@@ -21,8 +21,8 @@ Shuffz Mixed Algo Miner uses the following mining software for the following Coi
 | Raptoreum   | xmrig       |N|
 | Grin        | lolminer/gminer|Y|
 | RavenCoin   | nbminer     |Y|
-| Ellaism     |             || zergpool.com |
-| Zano        |             |
+| Ellaism     | cgminer     || zergpool.com |
+| Zano        | WildRig Multi|| zano.luckypool.io |
 | QuarkChain  |             |
 | Equilibria  |             |
 | Etho        |             |
