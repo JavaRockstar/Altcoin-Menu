@@ -1,4 +1,4 @@
-# Shuffz Altcoin Miner (Still in production)
+# Shuffz Altcoin Miner (Under Development)
 
 Shuffz Altcoin Miner is a Bash Script that was created to make it easier to start mining altcoins in Linux. Shuffz Altcoin Miner helps you to mine over 50 different POW Coins/Tokens.
 
