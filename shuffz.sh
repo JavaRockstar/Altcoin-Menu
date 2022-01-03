@@ -310,6 +310,10 @@ do
                 read -p "Enter Pool Address Eg. de.scala.herominers.com:1190: "
                 echo "$REPLY"
                 sed -i "s/de.scala.herominers.com:1190/$REPLY/g" start-mining-scala.sh
+                clear
+                read -p "Enter Worker ID: "
+                echo "$REPLY"
+                sed -i "s/shuffz/$REPLY/g" ./start-mining-scala.sh
                 sudo ./start-mining-scala.sh
             done            
                 ;;
