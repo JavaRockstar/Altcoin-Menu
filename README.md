@@ -42,7 +42,7 @@ Shuffz Mixed Algo Miner uses the following mining software for the following Coi
 | KevaCoin    |             |
 | MWC         |             |
 | QRL         |             |
-| Scala       |             |
+| Scala       |SRBMiner-Multi|N| de.scala.herominers.com |
 | TurtleCoin  |             |
 | uPlexa      |             |
 
