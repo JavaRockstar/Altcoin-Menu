@@ -32,6 +32,7 @@ options=("Mine ETH" "Mine ERG" "Mine Firo" "Mine Flux" "NiceHash" "Donate-a-Core
 select opt in "${options[@]}"
 do
     case $opt in
+        # Working
         "Mine ETH")
             # Check for PhionixMiner if exists extract tar.gz
             for a in PhoenixMiner_5.6d_Linux.tar.gz
@@ -57,6 +58,8 @@ do
                 sudo ./start_miner.sh
             done
             ;;
+
+        # Working
         "Mine ERG")
             for a in NBMiner_40.1_Linux.tgz
             do
@@ -81,6 +84,7 @@ do
                 sudo ./start_ergo.sh
             done
             ;;
+        # Working
         "Mine Firo")
                 sudo wget -c https://github.com/trexminer/T-Rex/releases/download/0.24.8/t-rex-0.24.8-linux.tar.gz && tar -xzf t-rex-0.24.8-linux.tar.gz
                 clear
@@ -99,6 +103,7 @@ do
                 sed -i "s/rig0/$REPLY/g" FIRO-2miners.sh
                 sudo ./FIRO-2miners.sh            
                 ;;
+        # To-do
         "Mine VRSC CPU Mining")
             for a in NBMiner_40.1_Linux.tgz
             do
@@ -124,6 +129,7 @@ do
             done
             ;;
         "Mine RVN")
+            # Working
             for a in SRBMiner-Multi-0-8-8.tar.gz
             do
                 a_dir=${a%.tar.gz}
@@ -144,6 +150,7 @@ do
             done  
             ;;
         "Mine Flux")
+            # Working
             for a in lolMiner_v1.38_Lin64.tar.gz
             do
                 a_dir=${a%.tar.gz}
@@ -167,6 +174,7 @@ do
                 sudo ./mine_flux.sh
             done
             ;;
+        # Working
         "Mine XMR")
                 tar -xvzf xmrig-6.16.2.tar.gz
                 cd xmrig-6.16.2
@@ -192,6 +200,7 @@ do
         "Mixed Algo")
             echo "This option will switch between all the listed alogorythms"
             ;;
+        #To-do
         "Mine ZEC")
             for a in NBMiner_40.1_Linux.tgz
             do
@@ -210,6 +219,7 @@ do
                 sudo ./start_ergo.sh
             done
             ;;
+        #To-do
         "Mine ETC")
             for a in NBMiner_40.1_Linux.tgz
             do
@@ -310,6 +320,7 @@ do
                 sudo ./start_ergo.sh
             done
             ;;
+        # Working
         "Mine Scala CPU")
             for a in SRBMiner-Multi-0-8-8.tar.gz
             do
@@ -334,6 +345,7 @@ do
                 sudo ./start-mining-scala.sh
             done            
                 ;;
+        # Working add one time or add to crontab option.
         "Donate-a-Core")
                 echo "By donating one or more CPU cores to our project we can use these cores to mine a small amount of Coins/Tokens that can be used to further develop of user mining scripts."
                 while true; do
