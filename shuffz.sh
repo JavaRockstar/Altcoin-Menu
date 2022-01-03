@@ -28,7 +28,7 @@ echo -e "POW in Style - Mine 50 different POW Coins/Tokens\n"
 # Bash Menu
 
 PS3='Please enter your choice: '
-options=("Mine ETH" "Mine ERG" "Mine Firo" "Mine Flux" "NiceHash" "Donate-a-Core" "Mine VRSC CPU Mining" "Mine XMR" "Mine RVN" "Mine ZEC" "Mine ETC" "Mine CFX" "Mine BEAM" "Mine CORTEX" "Mine AE" "Mixed Algo" "Mine Raptoreum CPU" "Mine Grin GPU/CPU" "Mine Scala CPU" "Mine TENT GPU" "Quit")
+options=("Mine ETH" "Mine ERG" "Mine Firo" "Mine Flux" "NiceHash" "Donate-a-Core" "Mine VRSC CPU Mining" "Mine XMR" "Mine RVN" "Mine ZEC" "Mine ETC" "Mine CFX" "Mine BEAM" "Mine CORTEX" "Mine AE" "Mine Equilibria" "Mixed Algo" "Mine Raptoreum CPU" "Mine Grin GPU/CPU" "Mine Scala CPU" "Mine TENT GPU" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
