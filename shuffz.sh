@@ -27,7 +27,7 @@ echo -e "Shuffz Mining Script \n"
 # Bash Menu
 
 PS3='Please enter your choice: '
-options=("Mine ETH" "Mine ERG" "Mine Firo" "Mine Flux" "NiceHash" "Donate-a-Core" "Mine VRSC CPU Mining" "Mine XMR" "Mine RVN" "Mine ZEC" "Mine ETC" "Mine CFX" "Mine BEAM" "Mine CORTEX" "Mine AE" "Mixed Algo" "Mine Raptoreum CPU" "Mine Grin GPU/CPU" "Mine TENT GPU" "Quit")
+options=("Mine ETH" "Mine ERG" "Mine Firo" "Mine Flux" "NiceHash" "Donate-a-Core" "Mine VRSC CPU Mining" "Mine XMR" "Mine RVN" "Mine ZEC" "Mine ETC" "Mine CFX" "Mine BEAM" "Mine CORTEX" "Mine AE" "Mixed Algo" "Mine Raptoreum CPU" "Mine Grin GPU/CPU" "Mine Scala CPU" "Mine TENT GPU" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -293,6 +293,26 @@ do
                 sudo ./start_ergo.sh
             done
             ;;
+        "Mine Scala")
+            for a in SRBMiner-Multi-0-8-8.tar.gz
+            do
+                a_dir=${a%.tgz}
+                mkdir --parents $a_dir
+                tar -xzvf $a -C $a_dir
+                cd SRBMiner-Multi-0-8-8
+                cd SRBMiner-Multi-0-8-8
+                sudo chmod +x start-mining-scala.sh
+                clear
+                read -p "Enter your Scala Wallet Address: "
+                echo "$REPLY"
+                sed -i "s/SvjrUeKEARRBQzrbjzhLp1GGnK327TzynA3Ayx7z9uwh6fSZjEiA42sPekwjpqMdu6EurbBmZ7hJoFN1BWsjMqQa1LN11uHVa/$REPLY/g" start-mining-scala.sh
+                clear
+                read -p "Enter Pool Address Eg. de.scala.herominers.com:1190: "
+                echo "$REPLY"
+                sed -i "s/de.scala.herominers.com:1190/$REPLY/g" start-mining-scala.sh
+                sudo ./start-mining-scala.sh
+            done            
+                ;;
         "Donate-a-Core")
                 echo "By donating one or more CPU cores to our project we can use these cores to mine a small amount of Coins/Tokens that can be used to further develop of user mining scripts."
                 while true; do
