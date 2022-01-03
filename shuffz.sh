@@ -293,10 +293,10 @@ do
                 sudo ./start_ergo.sh
             done
             ;;
-        "Mine Scala")
+        "Mine Scala CPU")
             for a in SRBMiner-Multi-0-8-8.tar.gz
             do
-                a_dir=${a%.tgz}
+                a_dir=${a%.tar.gz}
                 mkdir --parents $a_dir
                 tar -xzvf $a -C $a_dir
                 cd SRBMiner-Multi-0-8-8
