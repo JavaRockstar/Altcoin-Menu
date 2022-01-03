@@ -22,7 +22,8 @@ t4DvmBapk1ww7VLwSTLISek3JkuL3aU+jYzjqPWSl2CxkTQU6309jWxAM4vIXhe7W5ziZzgyZyNn
 beamfYBq32SztadXNQ3lZNoPpitpmfQDAAA=
 " | gunzip
 
-echo -e "Shuffz Mining Script \n" 
+echo -e "Shuffz Mining Script\n" 
+echo -e "POW in Style - Mine 50 different POW Coins/Tokens\n"
 
 # Bash Menu
 
