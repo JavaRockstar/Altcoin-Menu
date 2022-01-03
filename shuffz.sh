@@ -124,8 +124,24 @@ do
             done
             ;;
         "Mine RVN")
-            read -p "Enter your RVN Wallet Address: "
-            echo "$REPLY" > rvnwallet.txt
+            for a in SRBMiner-Multi-0-8-8.tar.gz
+            do
+                a_dir=${a%.tar.gz}
+                mkdir --parents $a_dir
+                tar -xzvf $a -C $a_dir
+                cd SRBMiner-Multi-0-8-8
+                cd SRBMiner-Multi-0-8-8
+                sudo chmod +x start-mining-raven.sh
+                clear
+                read -p "Enter your RVN Wallet Address: "
+                echo "$REPLY"
+                sed -i "s/RMkbRvStnFQNg5v9Pnxuik8o6pssjmJVYn/$REPLY/g" start-mining-raven.sh
+                clear
+                read -p "Enter Pool Address Eg. de.ravencoin.herominers.com:1140: "
+                echo "$REPLY"
+                sed -i "s/de.ravencoin.herominers.com:1140!rvn-eu1.nanopool.org:12222/$REPLY/g" start-mining-raven.sh
+                sudo ./start-mining-raven.sh
+            done  
             ;;
         "Mine Flux")
             for a in lolMiner_v1.38_Lin64.tar.gz
