@@ -345,6 +345,26 @@ do
                 sudo ./start-mining-scala.sh
             done            
                 ;;
+        "Mine Equilibria")
+            for a in SRBMiner-Multi-0-8-8.tar.gz
+            do
+                a_dir=${a%.tar.gz}
+                mkdir --parents $a_dir
+                tar -xzvf $a -C $a_dir
+                cd SRBMiner-Multi-0-8-8
+                cd SRBMiner-Multi-0-8-8
+                sudo chmod +x start-mining-raven.sh
+                clear
+                read -p "Enter your RVN Wallet Address: "
+                echo "$REPLY"
+                sed -i "s/RMkbRvStnFQNg5v9Pnxuik8o6pssjmJVYn/$REPLY/g" start-mining-raven.sh
+                clear
+                read -p "Enter Pool Address Eg. de.ravencoin.herominers.com:1140: "
+                echo "$REPLY"
+                sed -i "s/de.ravencoin.herominers.com:1140!rvn-eu1.nanopool.org:12222/$REPLY/g" start-mining-raven.sh
+                sudo ./start-mining-raven.sh
+            done  
+            ;;
         # Working add one time or add to crontab option.
         "Donate-a-Core")
                 echo "By donating one or more CPU cores to our project we can use these cores to mine a small amount of Coins/Tokens that can be used to further develop of user mining scripts."
