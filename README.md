@@ -12,7 +12,8 @@ Shuffz Mixed Algo Miner uses the following mining software for the following Coi
 | Ergo        | nbminer     |Y| herominers.com (low min payout) |Y|
 | Flux        | lolminer    |Y|
 | FIRO        | T-rex       |N| firo.2miners.com |Y|
-| XMR         | xmrig       |Y||Y|
+| XMR         | claymore/nheqminer|Y||Y|
+| ZEC         | xmrig       |Y||Y|
 | Verus       | hellminer   |N| luckpool.net |
 | Tent        | lolminer/gminer|Y|
 | CFX         | nbminer     |N|
@@ -23,7 +24,7 @@ Shuffz Mixed Algo Miner uses the following mining software for the following Coi
 | RavenCoin   | nbminer     |Y|
 | Ellaism     | cgminer     || zergpool.com |
 | Zano        | WildRig Multi|| zano.luckypool.io |
-| QuarkChain  |             |
+| QuarkChain  | PhoenixMiner| qkc.ontopool.com:3899|
 | Equilibria  |             |
 | Etho        |             |
 | BitcoinGold |             |
@@ -37,15 +38,16 @@ Shuffz Mixed Algo Miner uses the following mining software for the following Coi
 | Conceal     |             |
 | Zclassic    |             |
 | Vertcoin    |             |
-| Aeon        |             |
+| Aeon        | SRBminer-Multi||de.aeon.herominers.com:1145
 | ArQmA       |             |
 | KevaCoin    |             |
 | MWC         |             |
 | QRL         |             |
-| Scala       |SRBMiner-Multi|N| de.scala.herominers.com |
+| Scala       | SRBMiner-Multi|N| de.scala.herominers.com
 | TurtleCoin  |             |
 | uPlexa      |             |
-
+| mimblewimble| lolminer||mwc.2miners.com:1111
+| HiveCoin    | nbminer/KawPowMiner||eu.hiveminer.org:10008
 
 
 
