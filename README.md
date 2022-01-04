@@ -9,14 +9,14 @@ Shuffz Mixed Algo Miner uses the following mining software for the following Coi
 | Coins/Tokens| Mining Software| Nvidia/AMD Compatible | Suggested Pools | Listed In Script |
 | ----------- | ----------- |----------- | ----------- | ----------- |
 | Ethereum    | phionixminer|Y| ethermine.org |Y|
-| Ergo        | nbminer     |Y| herominers.com |Y|
-| Flux        | lolminer    |Y|
+| Ergo        | nbminer     |Y| ergo.herominers.com |Y|
+| Flux        | lolminer    |Y| flux.herominers.com
 | FIRO        | T-rex       |N| firo.2miners.com |Y|
-| XMR         | claymore/nheqminer|Y||Y|
-| ZEC         | xmrig       |Y||Y|
+| XMR         | claymore/nheqminer|Y| pool.minexmr.com:4444
+| ZEC         | xmrig       |Y||Y| eu1-zcash.flypool.org:3333
 | Verus       | hellminer   |N| luckpool.net |
-| Tent        | lolminer/gminer|Y|
-| CFX         | nbminer     |N|
+| Tent        | lolminer/gminer|Y| xsg-eu.minerpool.org
+| CFX         | nbminer     |N| cfx-eu1.nanopool.org
 | BEAM        | Bminer      |Y| eu1-beam.flypool.org 
 | CORTEX      | lolMiner    |Y| pool ctxc.2miners.com:2222
 | Raptoreum   | xmrig       |N| rtm.suprnova.cc:6273
