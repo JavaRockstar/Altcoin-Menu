@@ -8,8 +8,8 @@ Shuffz Mixed Algo Miner uses the following mining software for the following Coi
 
 | Coins/Tokens| Mining Software| Nvidia/AMD Compatible | Suggested Pools | Listed In Script |
 | ----------- | ----------- |----------- | ----------- | ----------- |
-| Ethereum    | phionixminer|Y| ethermine.org (low fees) |Y|
-| Ergo        | nbminer     |Y| herominers.com (low min payout) |Y|
+| Ethereum    | phionixminer|Y| ethermine.org |Y|
+| Ergo        | nbminer     |Y| herominers.com |Y|
 | Flux        | lolminer    |Y|
 | FIRO        | T-rex       |N| firo.2miners.com |Y|
 | XMR         | claymore/nheqminer|Y||Y|
