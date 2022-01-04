@@ -13,7 +13,7 @@ Shuffz Mixed Algo Miner uses the following mining software for the following Coi
 | Flux        | lolminer    |Y| flux.herominers.com
 | FIRO        | T-rex       |N| firo.2miners.com |Y|
 | XMR         | claymore/nheqminer|Y| pool.minexmr.com:4444
-| ZEC         | xmrig       |Y||Y| eu1-zcash.flypool.org:3333
+| ZEC         | xmrig       |Y| eu1-zcash.flypool.org:3333
 | Verus       | hellminer   |N| luckpool.net |
 | Tent        | lolminer/gminer|Y| xsg-eu.minerpool.org
 | CFX         | nbminer     |N| cfx-eu1.nanopool.org
