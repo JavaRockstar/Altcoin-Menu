@@ -20,7 +20,7 @@ Shuffz Mixed Algo Miner uses the following mining software for the following Coi
 | BEAM        | Bminer      |Y| eu1-beam.flypool.org 
 | CORTEX      | lolMiner    |Y| pool ctxc.2miners.com:2222
 | Raptoreum   | xmrig       |N| rtm.suprnova.cc:6273
-| Grin        | lolminer/gminer|Y|
+| Grin        | lolminer/gminer|Y| grin.2miners.com:3030
 | RavenCoin   | nbminer     |Y| stratum-ravencoin.flypool.org:3333
 | Ellaism     | cgminer     || zergpool.com 
 | Zano        | WildRig Multi|| zano.luckypool.io 
