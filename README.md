@@ -47,7 +47,7 @@ Shuffz Mixed Algo Miner uses the following mining software for the following Coi
 | TurtleCoin  |             |
 | uPlexa      |             |
 | mimblewimble| lolminer||mwc.2miners.com:1111
-| Bloc.money(BLOC)| XMRig||blo.pool-pay.com:5595|Cryptonight (cn-heavy/xhv)
+| Bloc.money(BLOC)| XMRig||blo.pool-pay.com:5595||Cryptonight (cn-heavy/xhv)
 | HiveCoin    | nbminer/KawPowMiner||eu.hiveminer.org:10008
 | HiveCoin    | nbminer/KawPowMiner||eu.hiveminer.org:10008
 | HiveCoin    | nbminer/KawPowMiner||eu.hiveminer.org:10008
