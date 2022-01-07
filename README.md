@@ -28,8 +28,8 @@ Shuffz Mixed Algo Miner uses the following mining software for the following Coi
 | Equilibria  | SRBMiner-Multi|| de.equilibria.herominers.com
 | Etho        | PhoenixMiner|| ether1.digipools.org:3302
 | BitcoinGold | GMiner/lolMiner|| btg.2miners.com:4040
-| HavenProtocol|            |
-| Ycash       |             |
+| HavenProtocol| SBMiner-Multi||de.haven.herominers.com:1110
+| Ycash       | lolMiner || ycash.dapool.io:3344
 | EtherGem    |             |
 | Ryo         |             |
 | BitTubeCash |             |
