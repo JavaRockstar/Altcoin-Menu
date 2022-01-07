@@ -8,9 +8,9 @@ Shuffz Mixed Algo Miner uses the following mining software for the following Coi
 
 | Coins/Tokens| Mining Software| Nvidia/AMD Compatible | Suggested Pools | Listed In Script | Algorithm |
 | ----------- | ----------- |----------- | ----------- | ----------- |----------- |
-| Ethereum    | phionixminer|Y| ethermine.org |Y|
-| Ergo        | nbminer     |Y| ergo.herominers.com |Y|
-| Flux        | lolminer    |Y| flux.herominers.com
+| Ethereum    | phionixminer|Y| ethermine.org |Y| Ethash
+| Ergo        | nbminer     |Y| ergo.herominers.com |Y|Autolykos
+| Flux        | lolminer    |Y| flux.herominers.com||
 | FIRO        | T-rex       |N| firo.2miners.com |Y|
 | XMR         | claymore/nheqminer|Y| pool.minexmr.com:4444
 | ZEC         | xmrig       |Y| eu1-zcash.flypool.org:3333
@@ -21,18 +21,18 @@ Shuffz Mixed Algo Miner uses the following mining software for the following Coi
 | CORTEX      | lolMiner    |Y| pool ctxc.2miners.com:2222
 | Raptoreum   | xmrig       |N| rtm.suprnova.cc:6273
 | Grin        | lolminer/gminer|Y| grin.2miners.com:3030
-| RavenCoin   | nbminer     |Y| stratum-ravencoin.flypool.org:3333
+| RavenCoin   | nbminer     |Y| stratum-ravencoin.flypool.org:3333||KawPow
 | Ellaism     | cgminer     || zergpool.com 
 | Zano        | WildRig Multi|| zano.luckypool.io 
 | QuarkChain  | PhoenixMiner|| qkc.ontopool.com:3899
 | Equilibria  | SRBMiner-Multi|| de.equilibria.herominers.com
-| Etho        | PhoenixMiner|| ether1.digipools.org:3302
+| Etho        | PhoenixMiner|| ether1.digipools.org:3302||Ethash
 | BitcoinGold | GMiner/lolMiner|| btg.2miners.com:4040
 | HavenProtocol| SBMiner-Multi||de.haven.herominers.com:1110
 | Ycash       | lolMiner || ycash.dapool.io:3344
 | EtherGem    |             |
 | Ryo         |             |
-| BitTubeCash |             |
+| BitTubeCash |             ||||CuckooCycle
 | Metaverse   |             |
 | Swap        |             |
 | Conceal     |             |
