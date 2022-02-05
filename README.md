@@ -1,6 +1,6 @@
 # Altcoin Menu (Under Development)
 
-Altcoin Menu Miner is a Bash Script that was created to make it easier to start mining altcoins in Linux. Altcoin Menu Miner helps you to mine over 50 different POW Coins/Tokens.
+Altcoin Menu Miner is a Bash Script that was created to make it easier to start mining altcoins in Linux. Altcoin Menu Miner helps you to mine over 50 different POW Coins/Tokens. If you find my script useful you can choose to donate-a-core to my mining farm.
 
 
 # Supported Coins/Tokens
