@@ -1,10 +1,10 @@
-# Shuffz Altcoin Miner (Under Development)
+# Altcoin Menu (Under Development)
 
 Shuffz Altcoin Miner is a Bash Script that was created to make it easier to start mining altcoins in Linux. Shuffz Altcoin Miner helps you to mine over 50 different POW Coins/Tokens.
 
 # Supported Coins/Tokens
 
-Shuffz Mixed Algo Miner uses the following mining software for the following Coins/Tokens.
+Altcoin Menu Mixed Algo Miner uses the following mining software for the following Coins/Tokens.
 
 | Coins/Tokens| Mining Software| Nvidia/AMD Compatible | Suggested Pools | Listed In Script | Algorithm |
 | ----------- | ----------- |----------- | ----------- | ----------- |----------- |
@@ -55,10 +55,6 @@ Shuffz Mixed Algo Miner uses the following mining software for the following Coi
 | Ubiq   | ||||Ubqhash
 | Zero   | ||||EquihashZero
 | Zero   | ||||EquihashZero
-
-
-
-
 
 
 HiveOS NVIDIA Linux Driver
