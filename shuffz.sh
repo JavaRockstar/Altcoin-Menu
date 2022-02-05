@@ -281,6 +281,7 @@ do
                 sudo ./start_ergo.sh
             done
             ;;
+        # To-do
         "Mine BEAM")
             for a in NBMiner_40.1_Linux.tgz
             do
@@ -301,6 +302,7 @@ do
                 sudo ./start_ergo.sh
             done
             ;;
+        # To-do
         "Mine AE")
             for a in NBMiner_40.1_Linux.tgz
             do
@@ -346,6 +348,7 @@ do
                 sudo ./start-mining-scala.sh
             done            
                 ;;
+        # To-do
         "Mine Equilibria")
             for a in SRBMiner-Multi-0-8-8.tar.gz
             do
