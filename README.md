@@ -1,6 +1,7 @@
 # Altcoin Menu (Under Development)
 
-Shuffz Altcoin Miner is a Bash Script that was created to make it easier to start mining altcoins in Linux. Shuffz Altcoin Miner helps you to mine over 50 different POW Coins/Tokens.
+Altcoin Menu Miner is a Bash Script that was created to make it easier to start mining altcoins in Linux. Altcoin Menu Miner helps you to mine over 50 different POW Coins/Tokens.
+
 
 # Supported Coins/Tokens
 
